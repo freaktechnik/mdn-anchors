@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "MDN Anchors",
+  "version": "1.0.0",
+  "description": "Inserts quick copy buttons to all anchors in an MDN document.",
+  "author": "Martin Giger",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://developer.mozilla.org/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "64": "icon.png"
+  }
+}
